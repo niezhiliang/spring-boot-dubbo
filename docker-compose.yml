@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  zoo1:
+    image: zookeeper:3.5
+    restart: always
+    hostname: zoo1
+    ports:
+      - 2181:2181
+    volumes:
+      - /tmp/zookeeper/data:/data
+#  dubbo-admin:
+#    image: chenchuxin/dubbo-admin
+#    restart: always
+#    hostname: dubbo-admin
+#    ports:
+#      - 9999:8080
+#    environment:
+#      dubbo.registry.address: zookeeper://127.0.0.1:2181
+#      dubbo.admin.root.password: root
+#      dubbo.admin.guest.password: guest
