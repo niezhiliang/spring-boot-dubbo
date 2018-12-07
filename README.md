@@ -186,6 +186,8 @@ public class IndexController {
 }
 
 ```
+先启动服务提供模块 再启动服务消费模块
+
 
 参考文章：https://mrbird.cc/Spring-Boot-Dubbo-Zookeeper.html
 
